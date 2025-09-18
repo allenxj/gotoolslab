@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GoTools Lab delivers lightweight audio, video, document, and productivity tools with live editing and instant language switching."
+    />
+    <title>GoTools Lab | Online Tool Suite</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <header class="top-bar">
+      <div class="logo" data-i18n="branding.title">GoTools Lab</div>
+      <nav class="main-nav">
+        <a href="#all-tools" data-i18n="navigation.allTools">All tools</a>
+        <a href="#categories" data-i18n="navigation.categories">Categories</a>
+        <a href="#editor" data-i18n="navigation.editor">Online editor</a>
+        <a href="#support" data-i18n="navigation.support">Support</a>
+      </nav>
+      <div class="actions">
+        <div class="language-switch">
+          <label for="language" data-i18n="navigation.languageLabel">Language</label>
+          <select id="language" aria-label="Language switcher">
+            <option value="en">English</option>
+            <option value="zh">简体中文</option>
+            <option value="es">Español</option>
+          </select>
+        </div>
+        <button class="cta" data-i18n="navigation.cta">Start now</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="all-tools">
+        <div class="hero-content">
+          <p class="hero-kicker" data-i18n="hero.kicker">One toolkit for every creator</p>
+          <h1 data-i18n="hero.title">
+            Powerful online tools with crystal-clear categories
+          </h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Tackle media, documents, and everyday tasks in seconds. Switch the entire
+            experience to your preferred language and stay productive anywhere.
+          </p>
+          <div class="hero-actions">
+            <a class="primary" href="#editor" data-i18n="hero.primary">Try the online editor</a>
+            <a class="secondary" href="#categories" data-i18n="hero.secondary">Explore categories</a>
+          </div>
+        </div>
+        <div class="hero-showcase">
+          <div class="showcase-card">
+            <h3 data-i18n="showcase.media.title">Media conversion</h3>
+            <p data-i18n="showcase.media.body">
+              Compress, convert, and trim audio or video files right in your browser.
+            </p>
+          </div>
+          <div class="showcase-card">
+            <h3 data-i18n="showcase.documents.title">Smart documents</h3>
+            <p data-i18n="showcase.documents.body">
+              Merge, sign, or transform PDFs without uploading sensitive data.
+            </p>
+          </div>
+          <div class="showcase-card">
+            <h3 data-i18n="showcase.utilities.title">Quick utilities</h3>
+            <p data-i18n="showcase.utilities.body">
+              From screen recorders to GIF makers, launch a tool in one click.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="search" aria-label="tool search">
+        <div class="search-inner">
+          <label for="search-input" class="visually-hidden" data-i18n="search.label">
+            Search tools
+          </label>
+          <input
+            id="search-input"
+            type="search"
+            data-i18n-placeholder="search.placeholder"
+            placeholder="Search for a tool..."
+          />
+          <p class="search-meta" data-i18n="search.meta">48 tools & growing — filter by typing</p>
+        </div>
+      </section>
+
+      <section id="categories" class="categories">
+        <header class="section-header">
+          <h2 data-i18n="categories.title">Curated categories</h2>
+          <p data-i18n="categories.subtitle">
+            Jump straight into the toolkit you need. Every category bundles focused tools with
+            consistent interfaces.
+          </p>
+        </header>
+        <div class="category-grid">
+          <article class="category-card" data-category="audio">
+            <div class="category-icon">🎧</div>
+            <h3 data-i18n="category.audio.title">Audio studio</h3>
+            <p data-i18n="category.audio.description">
+              Trim, mix, and convert audio formats without leaving your browser.
+            </p>
+            <div class="tool-list">
+              <a class="tool-card" data-keywords="audio trim cut mp3" href="#editor">
+                <h4 data-i18n="tool.audioTrimmer.title">Audio trimmer</h4>
+                <p data-i18n="tool.audioTrimmer.description">Cut MP3 or WAV clips precisely online.</p>
+              </a>
+              <a class="tool-card" data-keywords="audio convert format" href="#">
+                <h4 data-i18n="tool.audioConverter.title">Audio converter</h4>
+                <p data-i18n="tool.audioConverter.description">
+                  Switch between MP3, WAV, FLAC, and more instantly.
+                </p>
+              </a>
+              <a class="tool-card" data-keywords="noise remove enhance" href="#">
+                <h4 data-i18n="tool.noiseReducer.title">Noise reducer</h4>
+                <p data-i18n="tool.noiseReducer.description">
+                  Clean background noise with AI-powered smoothing.
+                </p>
+              </a>
+            </div>
+          </article>
+
+          <article class="category-card" data-category="video">
+            <div class="category-icon">🎬</div>
+            <h3 data-i18n="category.video.title">Video lab</h3>
+            <p data-i18n="category.video.description">
+              Edit, resize, and compress videos with lightning-fast previews.
+            </p>
+            <div class="tool-list">
+              <a class="tool-card" data-keywords="video editor cut" href="#">
+                <h4 data-i18n="tool.videoCutter.title">Video cutter</h4>
+                <p data-i18n="tool.videoCutter.description">Split videos into scenes in seconds.</p>
+              </a>
+              <a class="tool-card" data-keywords="video compress" href="#">
+                <h4 data-i18n="tool.videoCompressor.title">Video compressor</h4>
+                <p data-i18n="tool.videoCompressor.description">Reduce file sizes without losing HD clarity.</p>
+              </a>
+              <a class="tool-card" data-keywords="subtitles captions" href="#">
+                <h4 data-i18n="tool.subtitleMaker.title">Subtitle maker</h4>
+                <p data-i18n="tool.subtitleMaker.description">Generate subtitles with live translations.</p>
+              </a>
+            </div>
+          </article>
+
+          <article class="category-card" data-category="document">
+            <div class="category-icon">📄</div>
+            <h3 data-i18n="category.document.title">Document hub</h3>
+            <p data-i18n="category.document.description">
+              Securely transform PDFs, Office files, and scans across formats.
+            </p>
+            <div class="tool-list">
+              <a class="tool-card" data-keywords="pdf merge" href="#">
+                <h4 data-i18n="tool.pdfMerge.title">PDF merger</h4>
+                <p data-i18n="tool.pdfMerge.description">Combine multiple PDFs into a single file.</p>
+              </a>
+              <a class="tool-card" data-keywords="pdf sign" href="#">
+                <h4 data-i18n="tool.pdfSigner.title">PDF signer</h4>
+                <p data-i18n="tool.pdfSigner.description">Add signatures with legally binding timestamps.</p>
+              </a>
+              <a class="tool-card" data-keywords="ocr scan" href="#">
+                <h4 data-i18n="tool.ocrReader.title">OCR reader</h4>
+                <p data-i18n="tool.ocrReader.description">Extract text from scans in 120+ languages.</p>
+              </a>
+            </div>
+          </article>
+
+          <article class="category-card" data-category="utility">
+            <div class="category-icon">🛠️</div>
+            <h3 data-i18n="category.utility.title">Everyday utilities</h3>
+            <p data-i18n="category.utility.description">
+              Lightweight helpers for screenshots, archives, and productivity.
+            </p>
+            <div class="tool-list">
+              <a class="tool-card" data-keywords="screenshot record" href="#">
+                <h4 data-i18n="tool.screenRecorder.title">Screen recorder</h4>
+                <p data-i18n="tool.screenRecorder.description">Capture your screen with microphone audio.</p>
+              </a>
+              <a class="tool-card" data-keywords="gif maker" href="#">
+                <h4 data-i18n="tool.gifMaker.title">GIF maker</h4>
+                <p data-i18n="tool.gifMaker.description">Create looping GIFs from any video clip.</p>
+              </a>
+              <a class="tool-card" data-keywords="archive zip" href="#">
+                <h4 data-i18n="tool.archiveManager.title">Archive manager</h4>
+                <p data-i18n="tool.archiveManager.description">
+                  Zip and unzip archives with drag-and-drop convenience.
+                </p>
+              </a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="highlights">
+        <div class="highlight-card">
+          <h3 data-i18n="highlights.privacy.title">Privacy-first workflow</h3>
+          <p data-i18n="highlights.privacy.body">
+            Your files stay in your browser. Processing happens locally whenever possible for
+            maximum security.
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h3 data-i18n="highlights.speed.title">Optimised for speed</h3>
+          <p data-i18n="highlights.speed.body">
+            Global CDNs and GPU acceleration mean every tool is ready instantly no matter where
+            you are.
+          </p>
+        </div>
+        <div class="highlight-card">
+          <h3 data-i18n="highlights.accessibility.title">Inclusive design</h3>
+          <p data-i18n="highlights.accessibility.body">
+            Keyboard shortcuts, dark theme, and localisation support create a universal
+            experience.
+          </p>
+        </div>
+      </section>
+
+      <section id="editor" class="editor">
+        <header class="section-header">
+          <h2 data-i18n="editor.title">Live online editor</h2>
+          <p data-i18n="editor.subtitle">
+            Format documents, collaborate in real time, and export text instantly. All changes
+            happen in your browser with auto-save support.
+          </p>
+        </header>
+        <div class="editor-panel">
+          <aside class="editor-sidebar">
+            <h3 data-i18n="editor.templatesTitle">Quick templates</h3>
+            <ul>
+              <li><button data-template="meeting" data-i18n="editor.templates.meeting">Meeting notes</button></li>
+              <li><button data-template="content" data-i18n="editor.templates.content">Content brief</button></li>
+              <li><button data-template="todo" data-i18n="editor.templates.todo">Action plan</button></li>
+            </ul>
+            <div class="editor-status">
+              <span class="status-dot" aria-hidden="true"></span>
+              <p data-i18n="editor.status">Changes saved locally</p>
+            </div>
+          </aside>
+          <div class="editor-main">
+            <div class="editor-toolbar" role="toolbar">
+              <button data-command="bold" aria-label="Bold" data-i18n-title="editor.toolbar.bold">B</button>
+              <button data-command="italic" aria-label="Italic" data-i18n-title="editor.toolbar.italic">I</button>
+              <button data-command="underline" aria-label="Underline" data-i18n-title="editor.toolbar.underline">U</button>
+              <button data-command="insertUnorderedList" aria-label="Bulleted list" data-i18n-title="editor.toolbar.bullet">•</button>
+              <button data-command="insertOrderedList" aria-label="Numbered list" data-i18n-title="editor.toolbar.numbered">1.</button>
+              <button data-command="removeFormat" aria-label="Clear formatting" data-i18n-title="editor.toolbar.clear">⌫</button>
+              <button class="toolbar-button" data-action="download" data-i18n-title="editor.toolbar.download">⬇</button>
+              <button class="toolbar-button" data-action="copy" data-i18n-title="editor.toolbar.copy">⧉</button>
+              <button class="toolbar-button" data-action="darkmode" data-i18n-title="editor.toolbar.theme">☾</button>
+            </div>
+            <div id="editor-canvas" class="editor-canvas" contenteditable="true" role="textbox" aria-multiline="true">
+              <!-- Content is injected by JavaScript to match the selected language. -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="global-reach" id="support">
+        <header class="section-header">
+          <h2 data-i18n="global.title">Made for a global audience</h2>
+          <p data-i18n="global.subtitle">
+            We partner with creators and teams from 120+ countries. Switch between languages in
+            one click and keep the same intuitive layout.
+          </p>
+        </header>
+        <div class="reach-grid">
+          <div class="reach-card">
+            <h3 data-i18n="global.localization.title">Adaptive localisation</h3>
+            <p data-i18n="global.localization.body">
+              Interface strings, tooltips, and help guides follow your preferred language.
+            </p>
+          </div>
+          <div class="reach-card">
+            <h3 data-i18n="global.support.title">24/7 support</h3>
+            <p data-i18n="global.support.body">
+              Dedicated help centres in Asia, Europe, and the Americas for true local time zones.
+            </p>
+          </div>
+          <div class="reach-card">
+            <h3 data-i18n="global.integrations.title">Team integrations</h3>
+            <p data-i18n="global.integrations.body">
+              Connect with Google Drive, Dropbox, and Slack to share work instantly.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <span class="logo" data-i18n="branding.title">GoTools Lab</span>
+        <p data-i18n="footer.tagline">Your everyday creative lab in the cloud.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.privacy">Privacy</a>
+        <a href="#" data-i18n="footer.terms">Terms</a>
+        <a href="#" data-i18n="footer.contact">Contact</a>
+      </div>
+      <p class="footer-meta" data-i18n="footer.copyright">© 2024 GoTools Lab. All rights reserved.</p>
+    </footer>
+
+    <script src="assets/js/main.js" type="module"></script>
+  </body>
+</html>
